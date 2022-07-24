@@ -12,6 +12,8 @@ periodically to control the spread of information.
 
 * OS: NixOS
 * Monitoring: Prometheus & Grafana
+* Ad blocking: Pi-hole
+* Intrusion Detection (IDS): Snort
 
 # Motivation
 
