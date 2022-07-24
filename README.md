@@ -1,6 +1,4 @@
-# Apert
-
-<img src="assets/apert-logo.svg" alt="Image of a camera aperture" align="right" style="width: 128px;" /></a>
+<img src="assets/logo-name.png" alt="Aperture logo" />
 
 Apert is an open-source router project based on NixOS.
 
@@ -13,3 +11,9 @@ periodically to control the spread of information.
 # Motivation
 
 <img src="assets/bilbo.jpg" alt="Why shouldn't I have my own router?" style="width: 256px;" />
+
+# Credits
+
+* Camera aperture logo: Diaphgram Apertures SVG Vector from svgrepo.com
+* Bilbo "Why shouldn't I" meme: imgflip.com
+* Apert logo font: Alcubierre from dafontfree.io
