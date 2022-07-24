@@ -1,8 +1,8 @@
-# apert
+# Apert
 
 <img src="assets/apert-logo.svg" alt="Image of a camera aperture" align="right" style="width: 128px;" /></a>
 
-An open-source router project based on NixOS.
+Apert is an open-source router project based on NixOS.
 
 The name apert is inspired by the aperture of a camera that opens and closes to
 control the amount of light into the camera. Similarly, apert opens and closes
