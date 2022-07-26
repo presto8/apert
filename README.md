@@ -3,11 +3,11 @@
 Apert is an open-source router project based on NixOS.
 
 The name apert is inspired by the aperture of a camera that opens and closes to
-control the amount of light into the camera. Similarly, apert opens and closes
-to control the amount of data that enters the home network. The name is also
-inspired by Neil Stephenson's book "Anathem", in which a giant door opens
-periodically during a ceremony called apert to control the spread of
-information.
+control the amount of light that enters the camera. Similarly, apert opens and
+closes to control the amount of data that enters the home network. The name is
+also inspired by the book [Anathem](https://en.wikipedia.org/wiki/Anathem), in
+which a giant door opens periodically during a ceremony called apert to control
+the spread of information.
 
 # Tech Stack
 
@@ -24,10 +24,12 @@ information.
 
 I saw this great presentation [Michael Stapelberg: Why I wrote my own
 rsync](https://www.youtube.com/watch?v=wpwObdgemoE) and it included a section
-on his project, router7. It occurred to me that rather than trying to modify my
-Ubiquiti EdgeRouter-X to do everything I want, it might be easier to just write
-everything myself. And it would be a lot of fun and I would learn a lot. And
-thus, apert was born.
+on his project, router7.
+
+It occurred to me that rather than trying to modify my Ubiquiti EdgeRouter-X to
+do everything I want, it might be easier to just write everything myself.
+
+And it would be a lot of fun and I would learn a lot. And thus, apert was born.
 
 # Credits
 
