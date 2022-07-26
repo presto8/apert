@@ -14,6 +14,7 @@ information.
 * OS: NixOS
 * Monitoring: Prometheus & Grafana
 * Ad blocking: Pi-hole
+* QoS and traffic shaping: tc/iproute2
 * Intrusion Detection (IDS): Snort
 * VPN: Nebula, ZeroTier, OpenVPN, or WireGuard
 
