@@ -13,11 +13,11 @@ the spread of information.
 
 * OS: NixOS
 * Routing: iproute2
-* DNS, DHCP: dnsmasq?
+* DHCP: dnsmasq?
+* DNS, Ad Blocking: Blocky or AdGuard Home
 * Firewall: iptables
 * Monitoring: Prometheus & Grafana
-* Ad blocking: Blocky or AdGuard Home
-* QoS and traffic shaping: tc/iproute2
+* QoS and Traffic Shaping: tc/iproute2
 * Intrusion Detection (IDS): Snort
 * VPN: Nebula, ZeroTier, OpenVPN, or WireGuard
 * Reverse proxy for services: nginx
