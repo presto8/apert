@@ -4,6 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ./prometheus.nix
+    ./grafana.nix
     ./blocky.nix
     # ./adguardhome.nix
     # ./firewall.nix
