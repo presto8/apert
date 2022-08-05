@@ -60,8 +60,13 @@ accordingly.
 
     grep -l FIXME: /etc/nixos/*
 
+- At minimum, `iface_uplink` and `iface_downlink` need to be updated in
+  `routing.nix`.
+- Optional: Change the user name and/or password in `configuration.nix` if desired. The
+  default username is `apert` and the default password is `apert`.
 
-Test the installation.
+
+## Test the installation
 
     sudo nixos-rebuild test
 
