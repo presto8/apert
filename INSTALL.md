@@ -22,3 +22,18 @@ Advanced users or users wanting more control can follow the [NixOS installation
 guide](https://nixos.org/manual/nixos/stable/index.html#ch-installation).
 
 Once the system is installed and booting, proceed to the next step.
+
+## Copy NixOS configuration files
+
+Make a backup of /etc/nixos/configuration.nix.
+
+Copy the files from the git repo's "nixos" directory to /etc/nixos on the new
+apert system. Note that the hardware-configuration.nix file will be re-used
+from your existing installation.
+
+Search for "FIXME:" in /etc/nixos. Check all the settings and update the values
+accordingly.
+
+    grep -l FIXME: /etc/nixos/*
+
+Run "sudo nixos-rebuild test".

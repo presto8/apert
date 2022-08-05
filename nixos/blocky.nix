@@ -12,8 +12,9 @@ in {
     settings = {
       port = dns_port;
       httpPort = prometheus_metrics_port;
+
       # CloudFlare for Families, blocks malware and adult
-      upstream.default = [ "1.1.1.3" "1.0.0.3" ];
+      upstream.default = [ "1.1.1.1" "1.0.0.1" ];
 
       blocking = {
         blackLists = {
@@ -26,14 +27,14 @@ in {
           kids = [ "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn-social/hosts" ];
         };
         clientGroupsBlock.default = [ "default" ];
-        clientGroupsBlock."10.3.0.0/16" = [ "kids" ];
+        clientGroupsBlock."10.3.0.0/16" = [ "kids" ];  # FIXME
       };
 
       prometheus = {
         enable = true;
       };
 
-      customDNS = {
+      customDNS = {  # FIXME
         mapping = {
           "apert.lan" = "10.0.0.9";
           "agnate.lan" = "10.0.0.10";
@@ -43,12 +44,6 @@ in {
         };
       };
     };
-#    settings = ''
-#             - 46.182.19.48
-#             - 80.241.218.68
-#             - tcp-tls:fdns1.dismail.de:853
-#             - https://dns.digitale-gesellschaft.ch/dns-query
-#       '';
   };
 
   services.prometheus.scrapeConfigs = mkif services.blocky.prometheus.enable [

@@ -6,6 +6,7 @@
     ./prometheus.nix
     ./grafana.nix
     ./blocky.nix
+    # ./routing.nix
     # ./adguardhome.nix
     # ./firewall.nix
   ];
