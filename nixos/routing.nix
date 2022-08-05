@@ -3,8 +3,8 @@
 # Ref: https://francis.begyn.be/blog/nixos-home-router
 
 let
-  iface_uplink = "enp2s0";  # FIXME
-  iface_downlink = "enp1s0";  # FIXME
+  iface_uplink = "enp2s0";  # SETUP
+  iface_downlink = "enp1s0";  # SETUP
 in {
   boot.kernel.sysctl = {
     "net.ipv4.conf.all.forwarding" = true;

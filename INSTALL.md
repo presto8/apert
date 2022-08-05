@@ -34,7 +34,7 @@ List all of the Ethernet devices on the system:
 
     ls -1d /sys/class/net/e*
 
-In the example below, this system has two Ethernet adapers.
+In the example below, this system has two Ethernet adapters: enp1s0 and enp2s0.
 
     [apert@nixos:~]$ ls -1d /sys/class/net/e*
     /sys/class/net/enp1s0
@@ -55,15 +55,16 @@ from your existing installation.
 
     sudo cp apert.git/nixos/* /etc/nixos
 
-Search for "FIXME:" in /etc/nixos. Check all the settings and update the values
-accordingly.
+Update the configuration with the uplink and downlink names from the previous
+step:
 
-    grep -l FIXME: /etc/nixos/*
+    sudo vi /etc/nixos/routing.nix
+    # set iface_uplink and iface_downlink at the top of the fil
 
-- At minimum, `iface_uplink` and `iface_downlink` need to be updated in
-  `routing.nix`.
-- Optional: Change the user name and/or password in `configuration.nix` if desired. The
-  default username is `apert` and the default password is `apert`.
+Almost everything in Apert is configurable but hold off on making any other
+changes until the basic functionality is working.
+
+The default user name is `apert` and the default password is `apert`.
 
 
 ## Test the installation

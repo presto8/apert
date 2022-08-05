@@ -6,7 +6,7 @@
     ./prometheus.nix
     ./grafana.nix
     ./blocky.nix
-    # ./routing.nix
+    ./routing.nix
     # ./adguardhome.nix
     # ./firewall.nix
   ];
@@ -22,9 +22,9 @@
   i18n.defaultLocale = "en_US.utf8";
 
   users.mutableUsers = false;
-  users.users.apert = {  # FIXME: change username here if desired
+  users.users.apert = {
     isNormalUser = true;
-    # FIXME: to generate a new password, use: mkpasswd -m sha-512
+    # to generate a new password, use: mkpasswd -m sha-512
     hashedPassword = "$6$e37lm8S1PMNCJThO$jGfAEKfyNn3bClrM9xoo.orDZajjeHbF9JZ/2aQArDBBPc6epqKytFvVkxNFkhJ0x4epwHrGJjd5ww8sYfpu2.";  # "apert"
     description = "apert";
     extraGroups = [ "networkmanager" "wheel" ];
