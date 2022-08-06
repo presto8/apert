@@ -54,7 +54,7 @@ Screen time management: Monitoring then slowly reduce service (latency, bandwidt
 
 # Credits
 
-* Camera aperture logo: Diaphgram Apertures SVG Vector from svgrepo.com
+* Camera aperture icon: Diaphgram Apertures SVG Vector from svgrepo.com (CC0 License)
 * Bilbo "Why shouldn't I" meme: imgflip.com
 * Apert logo font: Alcubierre from dafontfree.io
 * Inspiration to write my own router: Michael Stapelberg
