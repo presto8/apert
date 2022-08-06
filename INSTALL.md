@@ -32,13 +32,12 @@ traffic going to the home network.
 
 List all of the Ethernet devices on the system:
 
-    ls -1d /sys/class/net/e*
+    echo /sys/class/net/e*
 
 In the example below, this system has two Ethernet adapters: enp1s0 and enp2s0.
 
-    [apert@nixos:~]$ ls -1d /sys/class/net/e*
-    /sys/class/net/enp1s0
-    /sys/class/net/enp2s0
+    [apert@nixos:~]$ echo /sys/class/net/e*
+    /sys/class/net/enp1s0 /sys/class/net/enp2s0
 
 Make a note of which one will be the uplink and which one will be the downlink.
 In this guide, enp2s0 will be the uplink and enp1s0 will be the downlink. Be
@@ -61,7 +60,7 @@ Update the configuration with the uplink and downlink names from the previous
 step:
 
     sudo vi /etc/nixos/routing.nix
-    # set iface_uplink and iface_downlink at the top of the fil
+    # set iface_uplink and iface_downlink at the top of the file
 
 Almost everything in Apert is configurable but hold off on making any other
 changes until the basic functionality is working.
