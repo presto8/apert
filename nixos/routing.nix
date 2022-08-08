@@ -13,28 +13,28 @@ in {
   };
 
   networking.useDHCP = false;
+
   networking.interfaces.uplink.name = iface_uplink;
   networking.interfaces.uplink.useDHCP = true;
+
+  networking.interfaces.downlink.name = iface_downlink;
+  networking.interfaces.downlink.ipv4.addresses = [
+    { address = "10.100.0.1"; prefixLength = 24; }
+  ];
 
   networking.nat.enable = true;
   networking.nat.externalInterface = iface_uplink;
   networking.nat.internalInterfaces = [ iface_downlink];
 
-  networking.interfaces.downlink.name = iface_downlink;
-  networking.interfaces.downlink.ipv4.address = [{
-    address = "10.100.0.1";
-    prefixLength = 24;
-  }];
-
   services.dhcpd4 = {
     enable = true;
-    interfaces = [ iface_downlink];
+    interfaces = [ iface_downlink ];
     extraConfig = ''
       option domain-name-servers 10.100.0.1;
       option subnet-mask 255.255.255.0;
 
       subnet 10.100.0.0 netmask 255.255.255.0 {
-        interface enp1s0;
+        interface ${toString iface_downlink};
         option routers 10.100.0.1;
         # by default, the router will also be the DNS; override it here if desired
         #  option domain-name-servers 10.100.0.1;
