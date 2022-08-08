@@ -42,6 +42,7 @@ in {
         option broadcast-address 10.100.0.255;
         range 10.100.0.100 10.100.0.200;
       }
+    '';
   };
 
  #  services.dhcpd4.machines = [
