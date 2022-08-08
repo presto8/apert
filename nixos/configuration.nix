@@ -21,6 +21,8 @@
   time.timeZone = "America/Los_Angeles";
   i18n.defaultLocale = "en_US.utf8";
 
+  security.sudo.wheelNeedsPassword = false;
+
   users.mutableUsers = false;
   users.users.apert = {
     isNormalUser = true;
