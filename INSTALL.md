@@ -11,10 +11,10 @@ This guide provides step-by-step instructions for installing Apert.
 
 Begin by installing NixOS on the system.
 
-The easiest method is to use the NixOS console installer. Download the Minimal
-ISO image from the [NixOS download page](https://nixos.org/download.html). The
-Graphical ISO image can also be used, however the very next step in the
-installation will remove all of the graphical components.
+The easiest method is to use the NixOS graphical installer. Download the
+Graphical ISO image from the [NixOS download
+page](https://nixos.org/download.html). Note that the graphical login will
+eventually be removed.
 
 Most of the configuration will be replaced later in the guide, so just accept
 all the defaults.
@@ -59,7 +59,7 @@ from your existing installation.
 Update the configuration with the uplink and downlink names from the previous
 step:
 
-    sudo vi /etc/nixos/routing.nix
+    sudo vi /etc/nixos/network.nix
     # set iface_uplink and iface_downlink at the top of the file
 
 Almost everything in Apert is configurable but hold off on making any other
