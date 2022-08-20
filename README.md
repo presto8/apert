@@ -18,14 +18,14 @@ and using command line tools.
 * OS: NixOS
 * Routing: iproute2
 * DHCP: dhcpd4
-* Firewall, NAT: iptables (maybe: nftables)
-* DNS, Ad Blocking: Blocky (maybe: AdGuard Home)
-  - Logging to Prometheus
+* Firewall, NAT: nftables
+* DNS, Ad Blocking: Blocky (with logging to Prometheus)
 * Monitoring: Prometheus & Grafana
-* QoS and Traffic Shaping: tc/iproute2
-* Intrusion Detection (IDS): Snort
+* Network uptime, latency, and packet loss: SmokePing
+* QoS and Traffic Shaping: tc/iproute2 (OpenWrt?)
+* Intrusion Detection (IDS): Snort + pulledpork
 * VPN: Nebula, ZeroTier, OpenVPN, or WireGuard
-* Reverse proxy for services: nginx
+* Reverse proxy for home server/dashboard: nginx
 
 # Motivation
 
@@ -59,6 +59,6 @@ Screen time management: Monitoring then slowly reduce service (latency, bandwidt
 * Apert logo font: Alcubierre from dafontfree.io
 * Inspiration to write my own router: Michael Stapelberg
 
-# Future Research and Reading
+# Similar Projects
 
-- nftables: https://scvalex.net/posts/54/
+* [Creating a NixOS live USB for a full featured APU router](https://dataswamp.org/~solene/2022-08-03-nixos-with-live-usb-router.html)
