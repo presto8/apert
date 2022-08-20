@@ -4,10 +4,7 @@ Apert is an open-source router project based on NixOS.
 
 The name apert is inspired by the aperture of a camera that opens and closes to
 control the amount of light that enters the camera. Similarly, apert opens and
-closes to control the amount of data that enters the home network. The name is
-also inspired by the book [Anathem](https://en.wikipedia.org/wiki/Anathem), in
-which a giant door opens periodically during a ceremony called apert to control
-the spread of information.
+closes to control the amount of data that enters the home network.
 
 Apert is an alternative to projects like pfSense, OpenWRT, or OPNsense. Apert
 is intended for advanced users who are comfortable editing configuration files
