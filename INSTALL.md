@@ -32,12 +32,12 @@ traffic going to the home network.
 
 List all of the Ethernet devices on the system:
 
-    echo /sys/class/net/e*
+    cd /sys/class/net && echo e*
 
-In the example below, this system has two Ethernet adapters: enp1s0 and enp2s0.
+In the example below, the system has two Ethernet adapters: enp1s0 and enp2s0.
 
-    [apert@nixos:~]$ echo /sys/class/net/e*
-    /sys/class/net/enp1s0 /sys/class/net/enp2s0
+    [apert@nixos:~]$ cd /sys/class/net && echo e*
+    enp1s0 enp2s0
 
 Make a note of which one will be the uplink and which one will be the downlink.
 In this guide, enp2s0 will be the uplink and enp1s0 will be the downlink. Be
@@ -97,4 +97,8 @@ Use ping to test Internet connectivity:
 If a device is connected to the downlink port, it should retrieve a DHCP IP
 address, such as 10.100.0.100.
 
-Apert is installed and the basic functionality is working!
+The basic functionality is working!
+
+Complete the Apert install by making the configuration permanent:
+
+    sudo nixos-rebuild switch
