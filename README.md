@@ -17,11 +17,11 @@ and using command line tools.
 * DHCP: dhcpd4
 * Firewall, NAT: nftables
 * DNS, Ad Blocking: Blocky (with logging to Prometheus)
-* Monitoring: Prometheus & Grafana
+* Monitoring: Prometheus, Grafana, Loki
 * Network uptime, latency, and packet loss: SmokePing
 * QoS and Traffic Shaping: tc/iproute2 (OpenWrt?)
 * Intrusion Detection (IDS): Snort + pulledpork
-* VPN: Nebula, ZeroTier, OpenVPN, or WireGuard
+* VPN: Nebula, Tailscale, ZeroTier, OpenVPN, or WireGuard
 * Reverse proxy for home server/dashboard: nginx
 
 # Motivation
